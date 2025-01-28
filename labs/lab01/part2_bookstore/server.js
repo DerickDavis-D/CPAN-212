@@ -24,7 +24,7 @@ const app = http.createServer((req, res) =>{
         const aboutpage = fs.readFileSync(path.join('html', 'about.html'));
         res.end(aboutpage);    
     }
-    else if(req.url === '/' || req.url ==="/categories") {
+    else if(req.url === '/' ||      req.url ==="/categories") {
         const aboutpage = fs.readFileSync(path.join('html', 'home.html'));
         res.end(aboutpage);    
     }

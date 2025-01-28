@@ -1,16 +1,18 @@
 const express = require('express');
 const router = express.Router();
 
-// /name route
+
+// Route for /name
 router.get('/name', (req, res) => {
-    res.send('Your Name');
-  });
+    res.send('<h1>Derick Davis</h1>');
+});
 
-
-// greeting route
+// Route for /greeting
 router.get('/greeting', (req, res) => {
-    res.send('Your Name - Your Student Number');
-  });
+    res.send('<h1>Hello</h1><p>Derick Davis, Student Number: N01724195</p>');
+});
+
+
   
 // add route
 router.get('/add', (req, res) => {
